@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		for(let i = 0; i < parseInt(img_piece); i++) {
 			let img_div_elem = document.createElement("div");
 			img_div_elem.className = "img";
-			document.querySelector(".double_direction_gallery").appendChild(img_div_elem);
+			document.querySelector(".double_direction_slideshow").appendChild(img_div_elem);
 		}
 		
 		let img_elem = document.querySelectorAll(".img");
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				k = 0;
 			}
 		}
-		let holder = document.querySelector(".double_direction_gallery");
+		let holder = document.querySelector(".double_direction_slideshow");
 		let win_height = holder.offsetHeight;
 		let win_width = holder.offsetWidth;
 		
@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	function showButtons(columns, rows) {
 		let is_anim_running = false;
-		let gallery = document.querySelector(".double_direction_gallery");
-		let gallery_img = document.querySelectorAll(".double_direction_gallery .img")[0];
+		let gallery = document.querySelector(".double_direction_slideshow");
+		let gallery_img = document.querySelectorAll(".double_direction_slideshow .img")[0];
 		let nav_button = document.querySelectorAll(".nav-button");
 		
 		let up_step = 0;
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			alert("Bad Values! Maximum images can be 31, columns value must be lower or equal than the images value");
 			return;
 		}
-		let holder_div = document.querySelector(".double_direction_gallery");
+		let holder_div = document.querySelector(".double_direction_slideshow");
 		//get the holder div to its original position
 		holder_div.style.top = "45px";
 		holder_div.style.left = "0px";
