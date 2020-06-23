@@ -17,10 +17,10 @@ Add ```slidshow_holder``` div into our body and place the main ```double_directi
 
 ```html
 <div class="slidshow_holder">
-  <button	class="nav-button left"><img src="images/btn-left.png"></button>
-  <button	class="nav-button top"><img src="images/btn-top.png"></button>
-  <button	class="nav-button right"><img src="images/btn-right.png"></button>
-  <button	class="nav-button bottom"><img src="images/btn-bottom.png"></button>
+  <button class="nav-button left"><img src="images/btn-left.png"></button>
+  <button class="nav-button top"><img src="images/btn-top.png"></button>
+  <button class="nav-button right"><img src="images/btn-right.png"></button>
+  <button class="nav-button bottom"><img src="images/btn-bottom.png"></button>
 		
   <div class="double_direction_slideshow">
     
