@@ -1,36 +1,18 @@
-$green: #00C851;
-$grey: #2E2E2E;
-$Atime: 0.5s; //transition time
-
-//GENERAL
-//hide input arrows
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+$Atime: 0.5s; //transition time for moving
 
 html,body {
-	position: relative;
 	height: 100%;
-	overflow: hidden;
-	font-size: 0px;
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
 }
+// this is the main holder ( .slidshow_holder )
+// change sizes here
 .slidshow_holder {
 	position: relative;
-	top: 45px;
+	top: 0px;
 	left: 0;
 	overflow: hidden;
 	width: 100%;
-	height: calc(100% - 45px);
+	height: 100%;
 }
 .double_direction_slideshow {
 	position: relative;
@@ -39,14 +21,7 @@ html,body {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	text-align: center;
 	transition: top $Atime, left $Atime;
-	& h1 {
-		font-size: 32px;
-	}
-	& p {
-		font-size: 14px;
-	}
 }
 .img {
 	position: absolute;
@@ -55,48 +30,6 @@ html,body {
 	background-repeat: no-repeat;
 	transition: height $Atime, width $Atime, top $Atime, left $Atime;
 	z-index: 3;
-}
-.settings {
-	position: absolute;
-	top: 60%;
-	left: 0;
-	width: 100%;
-	height: 45px;
-	box-shadow: 1px 1px 60px #333 inset;
-	font-size: 14px;
-	text-align: center;
-	z-index: 10;
-	color: white;
-	transition: top 0.2s;
-	& .content {
-		margin-top: 11px;
-	}
-}
-@mixin inputs() {
-	position: relative;
-	border: none;
-	color: black;
-	outline: 0 !important; //kill chrome's black border
-	width: 70px;
-	padding: 3px 11px;
-}
-#img_piece {
-	@include inputs();
-}
-#column_piece {
-	@include inputs();
-}
-@mixin buttons($color) {
-	position: relative;
-	border: none;
-	background-color: $color;
-	padding: 3px 10px;
-	border-radius: 4px;
-	outline: 0 !important;
-	cursor: pointer;
-}
-#go {
-	@include buttons($green);
 }
 //NAV-BUTTONS
 .nav-button {
@@ -144,12 +77,12 @@ html,body {
 	border-left: 4px solid $border_color;
 }
 .loader {
-	position: fixed;
-	top: 45px;
+	position: absolute;
+	top: 0;
 	left: 0;
 	width: 100%;
-	height: calc(100% - 45px);
-	background-color: $grey;
+	height: 100%;
+	background-color: #2E2E2E;
 	display: none;
 	opacity: 0;
 	z-index: 2;

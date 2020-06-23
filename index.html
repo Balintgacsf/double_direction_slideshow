@@ -4,28 +4,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Double Direction Slideshow</title>
 	<link rel="shortcut icon" type="image/png" href="images/favico.png"/>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">  
 	<link href="css/db_slideshow_style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/db_slideshow.js"></script>
 </head>
 <body>
-	<div class="loader"><div class="circle-loader-in"><div class="p1"></div><div class="p2"></div><div class="p3"></div><div class="p4"></div></div></div>
-	<div class="settings">
-		<div class="content">
-			Images  : <input id="img_piece" type="number"  min="0" max="31" placeholder="max 31">
-			Columns  : <input id="column_piece" type="number" min="0" max="31">
-			<button id="go" type="button">Go!</button>
-		</div>
-	</div>
+
 	<div class="slidshow_holder">
+	<div class="loader"><div class="circle-loader-in"><div class="p1"></div><div class="p2"></div><div class="p3"></div><div class="p4"></div></div></div>
 		<button	class="nav-button left"><img src="images/btn-left.png"></button>
 		<button	class="nav-button top"><img src="images/btn-top.png"></button>
 		<button	class="nav-button right"><img src="images/btn-right.png"></button>
 		<button	class="nav-button bottom"><img src="images/btn-bottom.png"></button>
 		
 		<div class="double_direction_slideshow">
-			<div><h1>Double direction Slide show</h1><p>Tell me how many images you want in how many columns!</p></div>
+
 		</div>
 	</div>
+	<script>
+		let images = [
+			"https://i.ibb.co/dL0rjZb/hatter5.jpg",
+			"https://i.ibb.co/1MkR9LN/hatter4.jpg",
+			"https://i.ibb.co/mhhKxP5/hatter3.jpg",
+			"https://i.ibb.co/tzX7Vs7/hatter2.jpg",
+			"https://i.ibb.co/2tVWW8H/hatter1.jpg",
+			"https://i.ibb.co/bXPYc01/hatter0.jpg",
+			"https://i.ibb.co/h8J5kxx/hatter31.jpg",
+			"https://i.ibb.co/pzH5pQ3/hatter30.jpg",
+			"https://i.ibb.co/1T6DfjM/hatter29.jpg",
+			"https://i.ibb.co/w4yK5Mg/hatter28.jpg",
+			"https://i.ibb.co/Gsbcp1M/hatter27.jpg",
+			"https://i.ibb.co/vJswWb0/hatter26.jpg",
+			"https://i.ibb.co/7C3RJyD/hatter25.jpg",
+			"https://i.ibb.co/mDkP1CF/hatter24.jpg",
+			"https://i.ibb.co/8c1sNGT/hatter23.jpg",
+			"https://i.ibb.co/QFCr5Mx/hatter22.jpg",
+			"https://i.ibb.co/TM17Xfm/hatter21.jpg",
+			"https://i.ibb.co/3ctv3W0/hatter20.jpg",
+			"https://i.ibb.co/H7tgt5G/hatter19.jpg",
+			"https://i.ibb.co/XL7z36X/hatter18.jpg",
+			"https://i.ibb.co/3TBJ5wc/hatter17.jpg",
+			"https://i.ibb.co/wdH804D/hatter16.jpg",
+			"https://i.ibb.co/gMgMWbW/hatter15.jpg",
+			"https://i.ibb.co/FwT8VVt/hatter14.jpg",
+			"https://i.ibb.co/vBPN3zW/hatter13.jpg",
+			"https://i.ibb.co/4fWJSH5/hatter12.jpg",
+			"https://i.ibb.co/x8m34S8/hatter11.jpg",
+			"https://i.ibb.co/6YS6Kbh/hatter10.jpg",
+			"https://i.ibb.co/ChFkhhz/hatter9.jpg",
+			"https://i.ibb.co/Jkxjbrt/hatter8.jpg",
+			"https://i.ibb.co/cTDp6mh/hatter6.jpg",
+			"https://i.ibb.co/VBNcJBr/hatter7.jpg"
+		];
+		
+		Double_Slideshow_print(30,6,images);
+	</script>
 </body>
 </html>
