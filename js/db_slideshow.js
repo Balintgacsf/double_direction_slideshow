@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		let holder_div = document.querySelector(".double_direction_slideshow");
 		//get the holder div to its original position
-		holder_div.style.top = "45px";
+		holder_div.style.top = "0px";
 		holder_div.style.left = "0px";
 		
 		//moving the settings to the top
