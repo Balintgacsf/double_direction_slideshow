@@ -13,18 +13,22 @@ First, call the files in head
 ```
 
 
-Adding ```double_direction_slideshow``` div into our body and place four navigation buttons into it.
+Add ```slidshow_holder``` div into our body and place the main ```double_direction_slideshow``` div into it and add navigation buttons.
 
 ```html
-<div class="double_direction_slideshow">
-  <button class="nav-button left"><img src="images/btn-left.png"></button>
-  <button class="nav-button top"><img src="images/btn-top.png"></button>
-  <button class="nav-button right"><img src="images/btn-right.png"></button>
-  <button class="nav-button bottom"><img src="images/btn-bottom.png"></button>
+<div class="slidshow_holder">
+  <button	class="nav-button left"><img src="images/btn-left.png"></button>
+  <button	class="nav-button top"><img src="images/btn-top.png"></button>
+  <button	class="nav-button right"><img src="images/btn-right.png"></button>
+  <button	class="nav-button bottom"><img src="images/btn-bottom.png"></button>
+		
+  <div class="double_direction_slideshow">
+    
+  </div>
 </div>
 ```
 
-## Adding Javascript
+## Add Javascript
 ```javascript
 <script>
 let images = [
@@ -45,5 +49,7 @@ Double_Slideshow_print(10, 5, images);
 ```
 You can use ```Double_Slideshow_print(piece, columns, images)``` to call the function. Just pass the images array and you can set how many images you want to show.
 In different device sizes, you can call the function with different numbers so you can keep the images aspect ratio.
+
+By default its full page slideshow, but you can modify it by go to the scss file  and find ``` .slidshow_holder ```.
 
 [Demo here](https://codepen.io/Balint_Gacsfalvy/pen/VwepVWd)
