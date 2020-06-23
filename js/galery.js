@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			"https://i.ibb.co/VBNcJBr/hatter7.jpg"
 		];
 	
-	function Double_Gallyery_print(img_piece,columns, images) {
+	function Double_Slideshow_print(img_piece,columns, images) {
 		//adding images to our gallery
 		for(let i = 0; i < parseInt(img_piece); i++) {
 			let img_div_elem = document.createElement("div");
@@ -213,10 +213,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		if(window.innerWidth <= 768) {
 			setTimeout(function() { //waiting for mobile devices to hide keyboard
-				Double_Gallyery_print(quantity,column_num, images);
+				Double_Slideshow_print(quantity,column_num, images);
 			},100);
 		} else {
-			Double_Gallyery_print(quantity,column_num, images);
+			Double_Slideshow_print(quantity,column_num, images);
 		}
 	});
 });
